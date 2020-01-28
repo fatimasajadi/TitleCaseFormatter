@@ -9,7 +9,7 @@ import { WrappedNodeExpr } from '@angular/compiler';
 export class AppComponent {
   prepositionList = ["of", "the"]
   title = 'TitleCaseFormatter';
-  username;
+  username = "";
 
   splitter(username) {
 
@@ -27,6 +27,6 @@ export class AppComponent {
     if (this.prepositionList.includes(splitted[0])) {
       myArray[0] = splitted[0].charAt(0).toUpperCase() + splitted[0].slice(1).toLowerCase()
     }
-    console.log(myArray)
+    return (myArray.join(' '))
   }
 }

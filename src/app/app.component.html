@@ -1,4 +1,8 @@
-<input [(ngModel)]="username" class="myinput">
-<p>{{username}}</p>
+<div class="container">
+    <input [(ngModel)]="username" class="myinput">
+    <!-- <p>{{username}}</p> -->
 
-<button class="btn btn-primary" (click)=splitter()>click to act</button>
+
+
+    <p class="resultTitle">{{splitter(username)}}</p>
+</div>
